@@ -1,0 +1,10 @@
+---
+# Replaces idk what model
+
+source_files: [../src/customTimer.cpp]
+hooks:
+  - name: CustomTimer
+    type: add_func_pointer
+    src_addr_pal: 0x809803B4
+    target_func: 'daCustomTimer::build()'
+
