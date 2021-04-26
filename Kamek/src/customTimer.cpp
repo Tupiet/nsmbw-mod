@@ -4,6 +4,9 @@
 #include <sfx.h>
 
 extern "C" bool SpawnEffect(const char*, int, Vec*, S16Vec*, Vec*);
+extern u32 GameTimer;
+#define timeToAdd *(u32*) ((GameTimer) + 0x4)
+
 
 
 class daCustomTimer : public dEn_c {
@@ -44,7 +47,7 @@ class daCustomTimer : public dEn_c {
 class TimeKeeper {
     void *vtable; // 0x8031B358
     u32 timePlusFFFTimes40000; // not sure why this is here...
-    public: u16 time;
+    u16 time;
     u8 _A;
     u8 isTimeLessThan100;
     u8 _C;
@@ -62,8 +65,7 @@ class TimeKeeper {
 
 void daCustomTimer::playerCollision(ActivePhysics *apThis, ActivePhysics *apOther) {
 
-	TimeKeeper::instance->setTime(20);
-	TimeKeeper::instance->updateUI();
+	timeToAdd = timeToAdd + (20 << 0xC) - 1;
 
 	//FIXME changed to dStageActor_c::Delete(u8) from fBase_c::Delete(void)
 	this->Delete(1);
