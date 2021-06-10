@@ -2395,7 +2395,6 @@ sub_80064BD0 = 0x80064BD0;
 sub_80166970 = 0x80166970;
 sub_80166D10 = 0x80166D10;
 
-daEnGakeNoko_c__StateID_FoolMove = 0x80B14BC0;/*mi*/
 
 EnItem_BindAnimation_Continued = 0x80A291E4;
 dAcPy_c__ChangePowerupWithAnimation = 0x80145C00;/*mi*/

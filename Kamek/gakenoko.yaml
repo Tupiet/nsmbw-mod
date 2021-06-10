@@ -5,7 +5,7 @@ hooks:
     type: branch_insn
     branch_type: b
     src_addr_pal: 0x80A025A0
-    target_func: 'daEnGakeNoko_c::onCreate(aEnGakeNoko_c *self)'
+    target_func: 'EN_GAKE_NOKO_ctor_new(daEnGakeNoko_c*)'
 
   - name: move
     type: branch_insn
