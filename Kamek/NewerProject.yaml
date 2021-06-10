@@ -17,7 +17,7 @@ modules:
   - processed/mrsun.yaml
   - processed/firelaser.yaml
   - processed/spritetex.yaml
-  - processed/gakenoko.yaml
+#  - processed/gakenoko.yaml
   - processed/poweruphax.yaml
 #  - processed/heapbar.yaml
   - processed/randtiles.yaml

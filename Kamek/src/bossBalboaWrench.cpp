@@ -506,7 +506,7 @@ void daBalboa_c::updateModelMatrices() {
 
 			if (this->isBigBoss == 1) { settings = settings | 0x10; }
 
-			CreateActor(625, settings, this->pos, 0, 0);
+			CreateActor(544, settings, this->pos, 0, 0);
 		}
 
 		if(this->animationChr.isAnimationDone()) {
@@ -706,7 +706,7 @@ void daBalboa_c::updateModelMatrices() {
 
 			if (this->isBigBoss == 1) { settings = settings | 0x10; }
 
-			CreateActor(625, settings, this->pos, 0, 0);
+			CreateActor(544, settings, this->pos, 0, 0);
 		}
 
 		if(this->animationChr.isAnimationDone()) {

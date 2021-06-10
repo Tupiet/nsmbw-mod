@@ -1,11 +1,11 @@
 hooks:
 - name: WrenchThrowBuild
-  src_addr_jpn: 2157450428
-  src_addr_jpn2: 2157450444
-  src_addr_ntsc: &id001 2157452244
-  src_addr_ntsc2: 2157452260
-  src_addr_pal: *id001
-  src_addr_pal2: 2157452260
+  src_addr_jpn: 2158928632
+  src_addr_jpn2: 2158928664
+  src_addr_ntsc: 2158930456
+  src_addr_ntsc2: 2158930488
+  src_addr_pal: 2158930424
+  src_addr_pal2: 2158930456
   target_func: daWrench::build()
   type: add_func_pointer
 source_files:
