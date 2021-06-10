@@ -7,7 +7,7 @@ hooks:
   src_addr_ntsc2: 2157979104
   src_addr_pal: 2157979040
   src_addr_pal2: 2157979072
-  target_func: EN_GAKE_NOKO_ctor_new(daEnGakeNoko_c*)
+  target_func: daEnGakeNoko_c::onCreate(aEnGakeNoko_c *self)
   type: branch_insn
 - branch_type: bl
   name: move
