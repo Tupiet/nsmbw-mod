@@ -1676,6 +1676,7 @@ SECTIONS {
 	sub_80166D10 = 0x80166D10;
 
 	daEnGakeNoko_c__StateID_FoolMove = 0x80B14BC0;/*mi*/
+	daEnGakeNoko_c__StateID_Move = 0x80B14C00;
 
 	EnItem_BindAnimation_Continued = 0x80A291E4;
 	dAcPy_c__ChangePowerupWithAnimation = 0x80145C00;/*mi*/

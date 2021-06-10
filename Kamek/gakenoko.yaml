@@ -1,26 +1,26 @@
 ---
-source_files: [../src/gakenoko.cpp, ../src/gakenoko.S]
+source_files: [../src/gakenoko.S]
 hooks:
-  - name: BuildGakeNoko
+  - name: GakeNokoBuild
     type: add_func_pointer
-    src_addr_pal: 0x80A025A0
+    src_addr_pal: 0x80AEA9F8
     target_func: 'dGakeNoko_c::onCreate(int, daEnGakeNoko_c *self)'
 
-  - name: GakeNokoMove
+  - name: gakenoko_move
     type: branch_insn
     branch_type: bl
     src_addr_pal: 0x80a02de4
-    target_func: 'GakeNokoMove'
+    target_func: 'gakenoko_move'
 
-  - name: GakeNokoFoolMove
+  - name: gakenoko_foolmove
     type: branch_insn
     branch_type: bl
     src_addr_pal: 0x80a02f80
-    target_func: 'GakeNokoFoolMove'
+    target_func: 'gakenoko_foolmove'
 
-  - name: GakeNokoFall
+  - name: gakenoko_fall
     type: branch_insn
     branch_type: bl
     src_addr_pal: 0x80a032c8
-    target_func: 'GakeNokoFall'
+    target_func: 'gakenoko_fall'
 

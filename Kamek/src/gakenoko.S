@@ -2,8 +2,8 @@
 #include <asm_setup.S>
 .align 4
 
-.global GakeNokoMove
-GakeNokoMove:	
+.global gakenoko_move
+gakenoko_move:
 	lwz r9, 4(r30)
 	lis r10, twenty_four_or_alt_f@h
 	ori r10, r10, twenty_four_or_alt_f@l
@@ -11,8 +11,8 @@ GakeNokoMove:
 	lfsx f0, r10, r9
 	blr
 
-.global GakeNokoFoolMove
-GakeNokoFoolMove:
+.global gakenoko_foolmove
+gakenoko_foolmove:
 	lwz r9, 4(r30)
 	lis r10, twenty_four_or_alt_f@h
 	ori r10, r10, twenty_four_or_alt_f@l
@@ -20,8 +20,8 @@ GakeNokoFoolMove:
 	lfsx f0, r10, r9
 	blr
 
-.global GakeNokoFall
-GakeNokoFall:
+.global gakenoko_fall
+gakenoko_fall:
 	lwz r9, 4(r30)
 	lis r10, thirty_one_or_alt_f@h
 	ori r10, r10, thirty_one_or_alt_f@l
