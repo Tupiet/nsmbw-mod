@@ -2,7 +2,7 @@
 
 struct daEnGakeNoko_c : public dEn_c {
 	
-	int onCreate(daEnGakeNoko_c*);
+	int onCreate(int, daEnGakeNoko_c*);
 
 	mHeapAllocator_c allocator;
 	nw4r::g3d::ResFile resFile;
@@ -38,7 +38,7 @@ const ActivePhysics::Info GakeNokoColl = {
     &dEn_c::collisionCallback  // Callback callback;
 };
 
-int daEnGakeNoko_c::onCreate(daEnGakeNoko_c *self) {
+int daEnGakeNoko_c::onCreate(int, daEnGakeNoko_c *self) {
 	self->allocator.link(-1, mHeap::gameHeaps[0], 0, 0x20);
 	self->resFile.data = getResource("nokonokoB", "g3d/nokonokoB.brres");
 
